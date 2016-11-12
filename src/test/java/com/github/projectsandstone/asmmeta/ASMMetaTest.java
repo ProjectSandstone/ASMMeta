@@ -42,11 +42,11 @@ public class ASMMetaTest {
     public void test() throws Exception {
         ASMMeta asmMeta = new ASMMeta();
 
-        byte[] bytes = Files.readAllBytes(Paths.get("build/classes/test/com/github/projectsandtone/asmmeta/MyTestClass.class"));
+        byte[] bytes = Files.readAllBytes(Paths.get("build/classes/test/com/github/projectsandstone/asmmeta/MyTestClass.class"));
 
         asmMeta.index(bytes);
 
-        Optional<IMetaElement<?>> iMetaElement = asmMeta.get("MyTestClass");
+        Optional<IMetaElement<?>> iMetaElement = asmMeta.get("com.github.projectsandstone.asmmeta.MyTestClass");
 
         Assert.assertTrue(iMetaElement.isPresent());
 

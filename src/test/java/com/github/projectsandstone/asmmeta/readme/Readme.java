@@ -42,7 +42,7 @@ public class Readme {
     public void readme() throws Exception {
         Loader loader = new Loader();
 
-        loader.load(Files.readAllBytes(Paths.get("build/classes/test/com/github/projectsandtone/asmmeta/readme/MyClass.class")));
+        loader.load(Files.readAllBytes(Paths.get("build/classes/test/com/github/projectsandstone/asmmeta/readme/MyClass.class")));
 
         Injector injector = new Injector(loader);
         injector.inject("Hi");
